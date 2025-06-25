@@ -64,7 +64,7 @@ ANALYSIS GUIDELINES:
 `;
 
 const gemini = new ChatGoogleGenerativeAI({
-  apiKey: process.env.GOOGLE_API_KEY,
+  apiKey: process.env.NEXT_PUBLIC_GOOGLE_API_KEY,
   model: "gemini-2.0-flash",
   temperature: 0,
 });
