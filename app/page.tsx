@@ -198,7 +198,7 @@ const StrategicAIDashboard = () => {
             </div>
             <div className="text-right">
               <div className="text-sm text-gray-400">LAST UPDATE</div>
-              <div className="text-green-400">25 DEC 2024 21:36:53 UTC</div>
+              <div className="text-green-400">{new Date().toUTCString().replace(/(\d{2}) (\w{3}) (\d{4})/, (_, d, m, y) => `${d} ${m.toUpperCase()} ${y}`)}</div>
             </div>
           </div>
           {/* <div className="flex items-center gap-2 mt-4">
