@@ -152,7 +152,7 @@ const StrategicAIDashboard = () => {
   };
 
   const StrategicImportanceIndicator = ({ score }: { score: number }) => {
-    if (score >= 4.5) {
+    if (score >= 0.8) {
       return (
         <div className="flex items-center gap-2">
           <span className="text-red-400 text-lg">🔴</span>
@@ -162,7 +162,7 @@ const StrategicAIDashboard = () => {
         </div>
       );
     }
-    if (score >= 3.5) {
+    if (score >= 0.6) {
       return (
         <div className="flex items-center gap-2">
           <span className="text-yellow-400 text-lg">🟡</span>
